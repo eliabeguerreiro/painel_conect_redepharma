@@ -24,9 +24,8 @@ if(isset($_SESSION['msg'])){
     <div class="area-login shadow">
         <div class="text-container">
             <img src="./images/logo.png" alt="Logo">
-            <h1 class="login-name">Área de Login</h1>
-            <h3>Efetue o seu login para prosseguir</h3>
         </div>
+        <h1 class="login-name">Login</h1>
 
        
         <form method="POST" action="functions/loger.php">
@@ -46,7 +45,7 @@ if(isset($_SESSION['msg'])){
 
         </form>
 
-        <div><a href="cadastro_usuario.php">Cadastre-se aqui</a></div>
+        <center><div><a class="link_btn" href="cadastro_usuario.php">Cadastre-se aqui</a></div></center>
 
     </div>
 </body>

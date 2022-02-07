@@ -17,16 +17,15 @@ if(isset($_SESSION['msg'])){
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <title>Login | BI 3.0</title>
+    <title>Cadastro | BI 3.0</title>
 </head>
 <body>
 
     <div class="area-login shadow">
         <div class="text-container">
             <img src="./images/logo.png" alt="Logo">
-            <h1 class="login-name">Área de Login</h1>
-            <h3>Efetue o seu login para prosseguir</h3>
         </div>
+        <h1 class="login-name">Cadastro</h1>
 
        
         <form method="POST" action="functions/cad.php">
@@ -60,7 +59,7 @@ if(isset($_SESSION['msg'])){
             
 
             <div class="button-container">
-                <button type="submit">Entrar</button>
+                <button type="submit">Criar conta</button>
             </div>
 
         </form>
