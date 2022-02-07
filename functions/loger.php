@@ -14,10 +14,10 @@ if($_POST){
     
     //verificando a existencia do usuario no banco de dados(se sim, confirma senha)
 
-    $result_user = "SELECT * FROM `usuarios` WHERE usuario = '$login' LIMIT 1;";
-    $resultado_user = mysqli_query($conn, $result_user);
+    $result_user = "SELECT * FROM usuarios WHERE usuario = '$login' LIMIT 1;";
+    $resultado_user = mysqli_query($conn_user, $result_user);
 
-
+    var_dump($result_user);
       if($resultado_user){
         //verificando senha encriptografada
         $row_user = mysqli_fetch_assoc($resultado_user); 

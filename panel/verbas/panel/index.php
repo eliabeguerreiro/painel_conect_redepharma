@@ -18,13 +18,6 @@ var_dump($_SESSION);
 echo("</div><br>");
 */
 
-
-if(!$_SESSION['usuario']['nome']){
-  $_SESSION['msg'] = "Usuario sem nome cadastrado, necessário atualizar o perfil!";
-  header("Location: caract.php");
- 
-}
-
 ?>
 
 <!DOCTYPE html>

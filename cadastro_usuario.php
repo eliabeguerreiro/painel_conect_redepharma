@@ -59,7 +59,7 @@ if(isset($_SESSION['msg'])){
             
 
             <div class="button-container">
-                <button type="submit">Criar conta</button>
+                <button value="btnCadUsuario" type="submit">Criar conta</button>
             </div>
 
         </form>
