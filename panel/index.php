@@ -53,7 +53,7 @@ session_start();
                     <div class="btn_name">BI</div>
                     <small>*desenvolvimento*</small>
                 </div>
-                <div onclick="location.href='../functions/logout.php'" class="btn_box">
+                <div onclick="location.href='../functions/logout.php?sair=sim'" class="btn_box">
                     <div class="btn_icon"></div>
                     <div class="btn_name">Sair</div>
                 </div>

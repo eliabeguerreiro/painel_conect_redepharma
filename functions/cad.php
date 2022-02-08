@@ -10,7 +10,7 @@ if($_POST){
     $dados_st = array_map('strip_tags', $dados_rc);
     $dados = array_map('trim', $dados_st);
     
-    var_dump($dados);
+    // var_dump($dados);
 
     $erro = false;
     if((strlen($dados['senha'])) < 6){
