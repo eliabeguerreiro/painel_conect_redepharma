@@ -4,63 +4,106 @@ session_start();
 
 ?>
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang='pt-BR'>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/9104146bde.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="styles.css">
-    <title>Início | Redepharma</title>
+    <meta charset='utf-8' />
+    <meta name=”description” content='Plataforma central da Redepharma'>
+    <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+    <link rel='shortcut icon' href='favicon.ico' type='image/x-icon' />
+    <title>Recepção | Redepharma</title>
+    <link href='styles.css' rel='stylesheet'>
 </head>
-
 <body>
-
-    <section class="header">
-
-
-        <div class="hub">
-
-            <div>
-                <h1>Sistema em Implementação</h1>
-                <strong>Aguardando Cadastro dos funcionarios do Financeiro e do Compras</strong>
-
-            </div>
-            <br>
-            <div class="btn_container">
-                <div onclick="location.href='#'" class="btn_box" style="cursor: not-allowed;">
-                    <div class="btn_icon"></div>
-                    <div class="btn_name">Inventário</div>
-                </div>
-                <div onclick="location.href='#'" class="btn_box" style="cursor: not-allowed;">
-                    <div class="btn_icon"></div>
-                    <div class="btn_name">Delivery</div>
-                    <small>*desenvolvimento*</small>
-                </div>
-                <div onclick="location.href='+'" class="btn_box" style="cursor: not-allowed;">
-                    <div class="btn_icon"></div>
-                    <div class="btn_name">Verbas</div>
-
-                </div>
-                <div onclick="location.href='#'" class="btn_box" style="cursor: not-allowed;">
-                    <div class="btn_icon"></div>
-                    <div class="btn_name">Chamados</div>
-                    <small>*desenvolvimento*</small>
-                </div>
-                <div onclick="location.href='#'" class="btn_box" style="cursor: not-allowed;">
-                    <div class="btn_icon"></div>
-                    <div class="btn_name">BI</div>
-                    <small>*desenvolvimento*</small>
-                </div>
-                <div onclick="location.href='../functions/logout.php?sair=sim'" class="btn_box">
-                    <div class="btn_icon"></div>
-                    <div class="btn_name">Sair</div>
-                </div>
+    <section class='header'>
+        <div class='circulo'></div>
+        <header>
+            <a href='./'><img src='./images/logo_white.png' class='logo'></a>
+        </header>
+        <div class='content'>
+            <div class='textBox'>
+                <h2 style="color: #FFF;">REDEPHARMA</h2>
+                <p style="color: #FFF;">Bem vindo ao PharmaCenter, sistema central de tecnologia da RedePharma</p>
             </div>
 
+            <div class='imgBox'>
+                <img src='./images/re_redepharma.png' alt='Rê Redepharma'>
+            </div>
         </div>
     </section>
-</body>
+    <div class='verify'>
+        <section class='py-5 text-ligth'>
+            <center><alerta>*Aguardando o cadastro dos funcionários do Financeiro e do Compras<alerta></center>
+            <div class='valida'>
+                <div onclick="location.href='https://www.inventario.redepharma.com.br/'" class="card-btn">
+                    <div class="card-icon">
+                        <ion-icon name="file-tray-stacked-outline"></ion-icon>
+                    </div>
+                    <div class="card-nome">
+                        <p>Inventário</p>
+                    </div>
+                </div>
+                <div class="card-btn" style="cursor: not-allowed;">
+                    <div class="card-icon">
+                        <ion-icon name="car-outline"></ion-icon>
+                    </div>
+                    <div class="card-nome">
+                        <p>Delivery</p>
+                        <small>em desenvolvimento</small>
+                    </div>
+                </div>
+                <div class="card-btn" style="cursor: not-allowed;">
+                    <div class="card-icon">
+                        <ion-icon name="cash-outline"></ion-icon>
+                    </div>
+                    <div class="card-nome">
+                        <p>Verbas</p>
+                        <center><small>*</small></center>
+                    </div>
+                </div>
+                <div class="card-btn" style="cursor: not-allowed;">
+                    <div class="card-icon">
+                        <ion-icon name="chatbubbles-outline"></ion-icon>
+                    </div>
+                    <div class="card-nome">
+                        <p>Chamados</p>
+                        <small>em desenvolvimento</small>
+                    </div>
+                </div>
+                <div class="card-btn" style="cursor: not-allowed;">
+                    <div class="card-icon">
+                        <ion-icon name="stats-chart-outline"></ion-icon>
+                    </div>
+                    <div class="card-nome">
+                        <p>BI</p>
+                        <small>em breve</small>
+                    </div>
+                </div>
+                <div onclick="location.href='../functions/logout.php?sair=sim'" class="card-btn">
+                    <div class="card-icon">
+                        <ion-icon name="log-out-outline"></ion-icon>
+                    </div>
+                    <div class="card-nome">
+                        <p>Sair</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+	</div>
+    <!-- Footer -->
 
+    <footer class="footer">
+        <div class="blueLine"></div>
+        <section>
+            <div>
+                <div class="colunas" style="padding-top: 30px; padding-bottom: 30px;">
+                    <p style="color: #fff">RedePharma © Desenvolvido por: <a style="text-decoration: none; color: #ff7d12;" href="https://github.com/eliabeguerreiro">Eliabe Paz</a> & <a style="text-decoration: none; color: #ff7d12;" href="https://github.com/kcaiosouza">Caio Souza</a></p>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	</body>
 </html>
