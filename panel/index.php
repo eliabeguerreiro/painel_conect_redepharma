@@ -52,7 +52,7 @@ session_start();
                         <small>em desenvolvimento</small>
                     </div>
                 </div>
-                <div class="card-btn" style="cursor: not-allowed;">
+                <div onclick="location.href='./verbas/panel'" class="card-btn">
                     <div class="card-icon">
                         <ion-icon name="cash-outline"></ion-icon>
                     </div>
