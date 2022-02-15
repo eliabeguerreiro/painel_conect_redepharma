@@ -72,8 +72,6 @@ if($verba){
 
         }
 
-    
-
 ?>
 
 <!DOCTYPE html>
@@ -328,7 +326,13 @@ if($verba){
                         }
 
                         function openDoc() {
-                            window.open("<?php echo("anexos/".$verba['anexo']) ?>", "Documento");
+                            <?php 
+                            if($verba['anexo'] == NULL){
+                                echo("alert('Esta verba não possuí anexos.')");
+                            }else{
+                                echo("window.open('./anexos/".$verba['anexo']."')");
+                            }
+                            ?>
                         }
                     </script>
 

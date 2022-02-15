@@ -16,17 +16,26 @@ else{
 
 //coletando dados do formulario
 if($_POST){
+    $dados = $_POST;
 
-    if(!$_FILES['arquivo']){
+    if($_FILES['arquivo']['name'] == ""){
 
         $sql_forne = "INSERT INTO verba (fornecedor, valor, dt_criacao, ds_verba, autor) 
         values('".$dados['fornecedor']."', '".$dados['valor']."', '".date('Y,m,d')."', '".$dados['ds']."', '".$_SESSION['usuario']['id_usuario']."')";
         //echo($sql_forne);
         $upload = mysqli_query($conn, $sql_forne);
-    }
+        
+        if($upload){
 
-    $dados = $_POST;
-    
+            $sql_log = "INSERT INTO log_verba (id_user, nome, data_altera) VALUES ('".$_SESSION['usuario']['id_usuario']."', 'criou a verba:  ".$dados['ds']."' , '".date('Y,m,d')."')";
+            $upload_log = mysqli_query($conn, $sql_log);
+            //echo $sql_log;
+            if($upload_log){
+                $_SESSION['msg'] = "A verba ".$dados['ds']." foi cadastrada. Sua ação foi registrada";
+                header("Location:./index.php");
+            }
+        }
+    }
 
     // Pasta onde o arquivo vai ser salvo
     $_UP['pasta'] = 'anexos/';
@@ -73,33 +82,34 @@ if($_POST){
             // Upload efetuado com sucesso, exibe uma mensagem e um link para o arquivo
             $_SESSION['msg'] =  "Upload efetuado com sucesso!";
             $_SESSION['msg'] =  '<br /><a href="' . $_UP['pasta'] . $nome_final . '">Clique aqui para acessar o arquivo</a>';
-            $verifica = true;
-        
         }else {
-            // Não foi possível fazer o upload, provavelmente a pasta está incorreta
-            $_SESSION['msg'] =  "Não foi possível enviar o arquivo, tente novamente";
+            
         }
     
         
-    if(!$upload){
+    if($upload != true){
    
         $sql_forne = "INSERT INTO verba (fornecedor, valor, anexo, dt_criacao, ds_verba, autor) 
         values('".$dados['fornecedor']."', '".$dados['valor']."', '$nome_final', '".date('Y,m,d')."', '".$dados['ds']."', '".$_SESSION['usuario']['id_usuario']."')";
         //echo($sql_forne);
         $upload = mysqli_query($conn, $sql_forne);
-    }
 
-    }
+        if($upload){
 
-    if($upload){
-
-        $sql_log = "INSERT INTO log_verba (id_user, nome, data_altera) VALUES ('".$_SESSION['usuario']['id_usuario']."', 'criou a verba:  ".$dados['ds']."' , '".date('Y,m,d')."')";
-        $upload_log = mysqli_query($conn, $sql_log);
-        //echo $sql_log;
-        if($upload_log){
-            $_SESSION['msg'] = "A verba ".$dados['ds']." foi cadastrada. Sua ação foi registrada";
+            $sql_log = "INSERT INTO log_verba (id_user, nome, data_altera) VALUES ('".$_SESSION['usuario']['id_usuario']."', 'criou a verba:  ".$dados['ds']."' , '".date('Y,m,d')."')";
+            $upload_log = mysqli_query($conn, $sql_log);
+            //echo $sql_log;
+            if($upload_log){
+                $_SESSION['msg'] = "A verba ".$dados['ds']." foi cadastrada. Sua ação foi registrada";
+                header("Location:./index.php");
+            }
         }
+
     }
+
+    }
+
+    
 }
 
 ?>
