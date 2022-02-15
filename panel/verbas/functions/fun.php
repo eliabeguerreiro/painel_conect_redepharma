@@ -36,7 +36,7 @@ function pegarTotal ($conn, $verba){
 
 
 
-function pegarAutor ($conn, $verba){
+function pegarAutor ($conn, $conn2, $verba){
     
     $sql = "SELECT * FROM verba WHERE id_verba  = $verba";
     $sqlv = mysqli_query($conn, $sql);
@@ -44,7 +44,7 @@ function pegarAutor ($conn, $verba){
     
 
     $sqlu = "SELECT * FROM usuarios WHERE id_user = '".$sqlve['autor']."'";
-    $sqlus = mysqli_query($conn, $sqlu);
+    $sqlus = mysqli_query($conn2, $sqlu);
     $user = mysqli_fetch_assoc($sqlus);
     return($user['nome']);
 

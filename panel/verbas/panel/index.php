@@ -210,7 +210,7 @@ echo("</div><br>");
                             $fornecedor = mysqli_fetch_assoc($fornece);
 
                             $valor_atual = pegarTotal($conn, $row_verba['id_verba']);
-                            $autor = pegarAutor($conn, $row_verba['id_verba']);
+                            $autor = pegarAutor($conn, $conn_user, $row_verba['id_verba']);
                             
                             //var_dump($fornecedor);
                             echo("
