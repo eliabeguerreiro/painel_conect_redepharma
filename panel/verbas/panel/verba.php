@@ -177,9 +177,9 @@ if($_POST){
         <!-- main -->
         <div class="main">
             
-            <div class='alert alert-danger' role='alert'>
+            <!--div class='alert alert-danger' role='alert'>
                 <center><strong> Site em manutenção - não cadastrem verbas ou fornecedores até a saída deste aviso!</strong></center>
-            </div>
+            </div-->
 
             <!-- Mensagem de bem vindo -->
             <?php
@@ -198,6 +198,16 @@ if($_POST){
             </div>
             <!-- inbox Chamados -->
             <div class="details">
+
+            <?php
+                 if($_SESSION['usuario']['depto'] == 2 || $_SESSION['usuario']['tipo'] == 'system_admin'){
+
+
+
+
+
+            ?>
+
                 <div class="recentInbox">
                     <div class="cardHeader">
                         <h2>Cadastrar Verbas</h2>
@@ -257,6 +267,12 @@ if($_POST){
                         </div>
                     </div>
                 </div>
+
+            <?php
+                 }
+
+            ?>
+
             </div>
 
             <script>
@@ -304,5 +320,4 @@ if($_POST){
                 </div>
             </div>
 </body>
-
 </html>

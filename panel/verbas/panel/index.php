@@ -92,10 +92,9 @@ if($_GET){
         <!-- main -->
         <div class="main">
 
-            <div class='alert alert-danger' role='alert'>
-                <center><strong> Site em manutenção - não cadastrem verbas ou fornecedores até a saída deste
-                        aviso!</strong></center>
-            </div>
+            <!--div class='alert alert-danger' role='alert'>
+                <center><strong> Site em manutenção - não cadastrem verbas ou fornecedores até a saída deste aviso!</strong></center>
+            </div-->
 
 
             <!-- Mensagem de bem vindo -->
@@ -146,14 +145,14 @@ if($_GET){
 
                         echo("<div class='cards_body'>");
 
-                        $result = "SELECT * FROM verba WHERE fornecedor = $id LIMIT $inicio, $qnt_result_pg";
+                        $result = "SELECT * FROM verba WHERE fornecedor = $id ORDER BY 'id_verba' ASC LIMIT $inicio, $qnt_result_pg";
                         $resultado = mysqli_query($conn, $result);
                                        
                         
                     while ($row_verba = mysqli_fetch_assoc($resultado)){
                             //var_dump($row_usuario);
 
-                            $sql_for = "SELECT * FROM fornecedores WHERE id_fornecedor = '".$row_verba['fornecedor']."'";
+                            $sql_for = "SELECT * FROM fornecedores WHERE id_fornecedor = '".$row_verba['fornecedor']."' ORDER BY 'id_fornecedor'";
                             $fornece = mysqli_query($conn, $sql_for);
                             $fornecedor = mysqli_fetch_assoc($fornece);
 
@@ -289,7 +288,7 @@ if($_GET){
 
                 echo("<div class='cards_body'>");
 
-                $result = "SELECT * FROM fornecedores LIMIT $inicio, $qnt_result_pg";
+                $result = "SELECT * FROM fornecedores ORDER BY 'id_fornecedor' DESC LIMIT $inicio, $qnt_result_pg ";
                 $resultado = mysqli_query($conn, $result);
                             
                 
