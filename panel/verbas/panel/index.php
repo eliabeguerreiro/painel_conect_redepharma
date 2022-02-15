@@ -234,10 +234,9 @@ if($_GET){
             <!-- main -->
             <div class="main">
 
-                <div class='alert alert-danger' role='alert'>
-                    <center><strong> Site em manutenção - não cadastrem verbas ou fornecedores até a saída deste
-                            aviso!</strong></center>
-                </div>
+                <!--div class='alert alert-danger' role='alert'>
+                    <center><strong> Site em manutenção - não cadastrem verbas ou fornecedores até a saída deste aviso!</strong></center>
+                </div-->
 
 
                 <!-- Mensagem de bem vindo -->
