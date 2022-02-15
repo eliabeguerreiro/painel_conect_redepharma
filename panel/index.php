@@ -33,7 +33,7 @@ session_start();
     </section>
     <div class='verify'>
         <section class='py-5 text-ligth'>
-            <center><alerta>*Aguardando o cadastro dos funcionários do Financeiro e do Compras<alerta></center>
+            <!-- <center><alerta>*Aguardando o cadastro dos funcionários do Financeiro e do Compras<alerta></center> -->
             <div class='valida'>
                 <div onclick="location.href='https://www.inventario.redepharma.com.br/'" class="card-btn">
                     <div class="card-icon">
@@ -58,7 +58,6 @@ session_start();
                     </div>
                     <div class="card-nome">
                         <p>Verbas</p>
-                        <center><small>*</small></center>
                     </div>
                 </div>
                 <div class="card-btn" style="cursor: not-allowed;">
