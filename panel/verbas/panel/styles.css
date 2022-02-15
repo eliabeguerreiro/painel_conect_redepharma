@@ -155,6 +155,10 @@ body {
     white-space: nowrap;
 }
 
+.navigation img {
+    vertical-align: initial !important;
+}
+
 /* Curvas do lado de fora */
 
 .navigation ul li:hover a::before,

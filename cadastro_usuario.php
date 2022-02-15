@@ -39,13 +39,13 @@ if(isset($_SESSION['msg'])){
 
             <div class="login-container">
                 <select name="depto" id="depto">
-                    <option value="TI">TI</option>
-                    <option value="FINANCEIRO">Financeiro</option>
-                    <option value="CONTROLADORIA">Controladoria</option>
-                    <option value="RH">RH</option>
-                    <option value="COMPRAS">Compras</option>
-                    <option value="MARKETING">Marketing</option>
-                    <option value="SUPERVISAO">Supervisão</option>
+                    <option value="1">TI</option>
+                    <option value="3">Financeiro</option>
+                    <option value="4">Controladoria</option>
+                    <option value="5">RH</option>
+                    <option value="2">Compras</option>
+                    <option value="6">Marketing</option>
+                    <option value="7">Supervisão</option>
                 </select>
             </div><br>
             
