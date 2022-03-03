@@ -96,7 +96,8 @@ session_start();
         <section>
             <div>
                 <div class="colunas" style="padding-top: 30px; padding-bottom: 30px;">
-                    <p style="color: #fff">RedePharma © Desenvolvido por: <a style="text-decoration: none; color: #ff7d12;" href="https://github.com/eliabeguerreiro">Eliabe Paz</a> & <a style="text-decoration: none; color: #ff7d12;" href="https://github.com/kcaiosouza">Caio Souza</a></p>
+                    <p style="color: #fff">RedePharma © Desenvolvido por: <a style="text-decoration: none; color: #ff7d12;" href="https://github.com/kcaiosouza">Caio Souza</a> & <a style="text-decoration: none; color: #ff7d12;" href="https://github.com/eliabeguerreiro">Eliabe Paz</a>
+                     </p>
                 </div>
             </div>
         </section>
