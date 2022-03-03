@@ -218,7 +218,7 @@ if($verba){
                     while($mov = mysqli_fetch_assoc($sqlmovi)){
 
                         $sqlu = "SELECT * FROM usuarios WHERE id_user = '".$mov['autor']."'";
-                        $sqlus = mysqli_query($conn, $sqlu);
+                        $sqlus = mysqli_query($conn_user, $sqlu);
                         $user = mysqli_fetch_assoc($sqlus);
                         echo("<tr>");
                         echo("<td> Alteração: ".$mov['ds']."</td>");
