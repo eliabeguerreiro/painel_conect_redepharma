@@ -46,7 +46,7 @@ function pegarAutor ($conn, $conn2, $verba){
     $sqlu = "SELECT * FROM usuarios WHERE id_user = '".$sqlve['autor']."'";
     $sqlus = mysqli_query($conn2, $sqlu);
     $user = mysqli_fetch_assoc($sqlus);
-    return($user['nome']);
+    // return($user['nome']);  --->  (retornando null)
 
 
 
