@@ -220,6 +220,8 @@ if($verba){
                         $sqlu = "SELECT * FROM usuarios WHERE id_user = '".$mov['autor']."'";
                         $sqlus = mysqli_query($conn_user, $sqlu);
                         $user = mysqli_fetch_assoc($sqlus);
+
+                        echo$sqlu;
                         echo("<tr>");
                         echo("<td> Alteração: ".$mov['ds']."</td>");
                         echo("<td> Valor : R$:".$mov['valor']."</td>");
