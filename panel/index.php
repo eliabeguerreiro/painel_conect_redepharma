@@ -60,13 +60,12 @@ session_start();
                         <p>Verbas</p>
                     </div>
                 </div>
-                <div class="card-btn" style="cursor: not-allowed;">
+                <div class="card-btn" onclick="location.href='../../chamados_redph/'">
                     <div class="card-icon">
                         <ion-icon name="chatbubbles-outline"></ion-icon>
                     </div>
                     <div class="card-nome">
                         <p>Chamados</p>
-                        <small>em desenvolvimento</small>
                     </div>
                 </div>
                 <div class="card-btn" style="cursor: not-allowed;">
