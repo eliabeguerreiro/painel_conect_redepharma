@@ -46,6 +46,7 @@ if(isset($_SESSION['msg'])){
                     <option value="2">Compras</option>
                     <option value="6">Marketing</option>
                     <option value="7">Supervisão</option>
+                    <option value="8">Gerente de Loja</option>
                 </select>
             </div><br>
             
