@@ -38,7 +38,8 @@ if(isset($_SESSION['msg'])){
             </div><br>
 
             <div class="login-container">
-                <select name="depto" id="depto">
+                <select name="depto" id="depto" required>
+					<option value="">Selecione seu departamento</option>
                     <option value="1">TI</option>
                     <option value="3">Financeiro</option>
                     <option value="4">Controladoria</option>
