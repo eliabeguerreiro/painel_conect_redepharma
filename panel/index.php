@@ -11,25 +11,12 @@ session_start();
     <meta name=”description” content='Plataforma central da Redepharma'>
     <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
     <link rel='shortcut icon' href='favicon.ico' type='image/x-icon' />
-    <title>Recepção | Redepharma</title>
+    <title>RedeConecta | Redepharma</title>
     <link href='styles.css' rel='stylesheet'>
 </head>
 <body>
     <section class='header'>
-        <div class='circulo'></div>
-        <header>
-            <a href='./'><img src='./images/logo_white.png' class='logo'></a>
-        </header>
-        <div class='content'>
-            <div class='textBox'>
-                <h2 style="color: #FFF;">REDEPHARMA</h2>
-                <p style="color: #FFF;">Bem vindo ao PharmaCenter, sistema central de tecnologia da RedePharma</p>
-            </div>
-
-            <div class='imgBox'>
-                <img src='./images/re_redepharma.png' alt='Rê Redepharma'>
-            </div>
-        </div>
+        <img src="./images/bannerRedeConect.png" style="width: 100%; height: auto;" alt="banner">
     </section>
     <div class='verify'>
         <section class='py-5 text-ligth'>
@@ -49,7 +36,7 @@ session_start();
                     </div>
                     <div class="card-nome">
                         <p>Delivery</p>
-                        <small>em desenvolvimento</small>
+                        <small>Em desenvolvimento</small>
                     </div>
                 </div>
                 <div onclick="location.href='./verbas/panel'" class="card-btn">
@@ -60,12 +47,14 @@ session_start();
                         <p>Verbas</p>
                     </div>
                 </div>
-                <div class="card-btn" onclick="location.href='../../chamados_redph/'">
+				<!-- onclick="location.href='../../chamados_redph/'" -->
+                <div class="card-btn" style="cursor: not-allowed">
                     <div class="card-icon">
                         <ion-icon name="chatbubbles-outline"></ion-icon>
                     </div>
                     <div class="card-nome">
                         <p>Chamados</p>
+						<small>Em desenvolvimento</small>
                     </div>
                 </div>
                 <div class="card-btn" style="cursor: not-allowed;">
@@ -74,7 +63,7 @@ session_start();
                     </div>
                     <div class="card-nome">
                         <p>BI</p>
-                        <small>em breve</small>
+                        <small>Em breve</small>
                     </div>
                 </div>
                 <div onclick="location.href='../functions/logout.php?sair=sim'" class="card-btn">
