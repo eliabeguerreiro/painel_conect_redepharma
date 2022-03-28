@@ -47,14 +47,13 @@ session_start();
                         <p>Verbas</p>
                     </div>
                 </div>
-				<!-- onclick="location.href='../../chamados_redph/'" -->
-                <div class="card-btn" style="cursor: not-allowed">
+				<!--  -->
+                <div onclick="location.href='https://www.chamados.redepharma.com.br/'" class="card-btn">
                     <div class="card-icon">
                         <ion-icon name="chatbubbles-outline"></ion-icon>
                     </div>
                     <div class="card-nome">
                         <p>Chamados</p>
-						<small>Em desenvolvimento</small>
                     </div>
                 </div>
                 <div class="card-btn" style="cursor: not-allowed;">
