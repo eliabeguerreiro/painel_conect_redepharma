@@ -1,8 +1,8 @@
 <?php
 
-header("Location:http://conect.redepharma.com.br");
+//header("Location:http://conect.redepharma.com.br");
 
-/*
+
 
 session_start();
 include_once("functions/fun.php");
@@ -57,4 +57,3 @@ if(isset($_SESSION['msg'])){
 
 <?php
 
-*/

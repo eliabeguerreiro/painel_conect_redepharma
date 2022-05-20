@@ -30,13 +30,12 @@ session_start();
                         <p>Inventário</p>
                     </div>
                 </div>
-                <div class="card-btn" style="cursor: not-allowed;">
+                <div onclick="location.href='./delivery.php'" class="card-btn">
                     <div class="card-icon">
                         <ion-icon name="car-outline"></ion-icon>
                     </div>
                     <div class="card-nome">
                         <p>Delivery</p>
-                        <small>Em desenvolvimento</small>
                     </div>
                 </div>
                 <div onclick="location.href='./verbas/panel'" class="card-btn">
