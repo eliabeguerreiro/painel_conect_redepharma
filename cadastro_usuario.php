@@ -58,11 +58,7 @@ if(isset($_SESSION['msg'])){
             <div class="password-container">
                 <input placeholder="Confirme sua senha" type="password" name="senha_confirma" required>
             </div><br>
-            
-
-            <div class="button-container">
-                <button value="btnCadUsuario" type="submit">Criar conta</button>
-            </div>
+         
 
         </form>
 

@@ -1,4 +1,9 @@
 <?php
+
+header("Location:http://conect.redepharma.com.br");
+
+/*
+
 session_start();
 include_once("functions/fun.php");
 //notificando o usuario
@@ -45,8 +50,11 @@ if(isset($_SESSION['msg'])){
 
         </form>
 
-        <center><div><a class="link_btn" href="cadastro_usuario.php">Cadastre-se aqui</a></div></center>
 
     </div>
 </body>
 </html>
+
+<?php
+
+*/
