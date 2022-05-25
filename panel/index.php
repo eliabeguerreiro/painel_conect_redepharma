@@ -30,12 +30,14 @@ session_start();
                         <p>Inventário</p>
                     </div>
                 </div>
+                
                 <div onclick="location.href='./delivery.php'" class="card-btn">
                     <div class="card-icon">
                         <ion-icon name="car-outline"></ion-icon>
                     </div>
                     <div class="card-nome">
                         <p>Delivery</p>
+                        
                     </div>
                 </div>
                 <div onclick="location.href='./verbas/panel'" class="card-btn">
@@ -47,7 +49,7 @@ session_start();
                     </div>
                 </div>
 				<!--  -->
-                <div onclick="location.href='https://www.chamados.redepharma.com.br/'" class="card-btn">
+                <div onclick="location.href='./chamado.php'" class="card-btn">
                     <div class="card-icon">
                         <ion-icon name="chatbubbles-outline"></ion-icon>
                     </div>
