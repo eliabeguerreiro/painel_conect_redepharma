@@ -57,6 +57,14 @@ session_start();
                         <p>Chamados</p>
                     </div>
                 </div>
+                <div onclick="window.open('https://redepharma.com.br:2096/', '_blank')"  class="card-btn">
+                    <div class="card-icon">
+                        <ion-icon name="mail-outline"></ion-icon>
+                    </div>
+                    <div class="card-nome">
+                        <p>Webmail</p>
+                    </div>
+                </div>
                 <div class="card-btn" style="cursor: not-allowed;">
                     <div class="card-icon">
                         <ion-icon name="stats-chart-outline"></ion-icon>
