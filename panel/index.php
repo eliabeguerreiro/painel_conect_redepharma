@@ -65,13 +65,12 @@ session_start();
                         <p>Webmail</p>
                     </div>
                 </div>
-                <div class="card-btn" style="cursor: not-allowed;">
+                <div onclick="window.open('http://interno.redepharma.com.br/bi/', '_blank')" class="card-btn">
                     <div class="card-icon">
                         <ion-icon name="stats-chart-outline"></ion-icon>
                     </div>
                     <div class="card-nome">
                         <p>BI</p>
-                        <small>Em breve</small>
                     </div>
                 </div>
                 <div onclick="location.href='../functions/logout.php?sair=sim'" class="card-btn">
