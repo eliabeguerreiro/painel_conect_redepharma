@@ -9,6 +9,7 @@ if($_POST){
 
   $login = $_POST['login'];
   $senha = $_POST['senha'];
+  $_SESSION['senham'] = $_POST['senha'];
 
   if(!empty($login) AND (!empty($senha))){
     
@@ -17,7 +18,6 @@ if($_POST){
     $result_user = "SELECT * FROM usuarios WHERE usuario = '$login' LIMIT 1;";
     $resultado_user = mysqli_query($conn_user, $result_user);
 
-    var_dump($result_user);
       if($resultado_user){
         //verificando senha encriptografada
         $row_user = mysqli_fetch_assoc($resultado_user); 

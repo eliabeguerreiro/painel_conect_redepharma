@@ -22,16 +22,19 @@ session_start();
         <section class='py-5 text-ligth'>
             <!-- <center><alerta>*Aguardando o cadastro dos funcionários do Financeiro e do Compras<alerta></center> -->
             <div class='valida'>
-                <div onclick="location.href='https://www.inventario.redepharma.com.br/'" class="card-btn">
+                <?php
+                if($_SESSION['usuario']['depto'] == 1){
+                    ?>
+                    <div onclick="location.href='https://www.inventario.redepharma.com.br/'" class="card-btn">
                     <div class="card-icon">
                         <ion-icon name="file-tray-stacked-outline"></ion-icon>
                     </div>
                     <div class="card-nome">
                         <p>Inventário</p>
                     </div>
-                </div>
+                    </div>
                 
-                <div onclick="location.href='./delivery.php'" class="card-btn">
+                    <div onclick="location.href='./delivery.php'" class="card-btn">
                     <div class="card-icon">
                         <ion-icon name="car-outline"></ion-icon>
                     </div>
@@ -39,16 +42,42 @@ session_start();
                         <p>Delivery</p>
                         
                     </div>
-                </div>
-                <div onclick="location.href='./verbas/panel'" class="card-btn">
+                    </div>
+                    <div onclick="location.href='./verbas/panel'" class="card-btn">
                     <div class="card-icon">
                         <ion-icon name="cash-outline"></ion-icon>
                     </div>
                     <div class="card-nome">
                         <p>Verbas</p>
                     </div>
-                </div>
-				<!--  -->
+                    </div>
+                    <div onclick="location.href='./ouvidoria.php'" class="card-btn">
+                        <div class="card-icon">
+                            <ion-icon name="chatbubbles-outline"></ion-icon>
+                        </div>
+                        <div class="card-nome">
+                            <p>Ouvidoria</p>
+                        </div>
+                    </div>
+
+                <?php
+                }
+                if($_SESSION['usuario']['depto'] == 2 || $_SESSION['usuario']['depto'] == 3){
+                    ?>
+                    <div onclick="location.href='./verbas/panel'" class="card-btn">
+                        <div class="card-icon">
+                            <ion-icon name="cash-outline"></ion-icon>
+                        </div>
+                        <div class="card-nome">
+                            <p>Verbas</p>
+                        </div>
+                    </div>
+
+                    <?php
+                }
+                
+                ?>
+
                 <div onclick="location.href='./chamado.php'" class="card-btn">
                     <div class="card-icon">
                         <ion-icon name="chatbubbles-outline"></ion-icon>
@@ -57,6 +86,7 @@ session_start();
                         <p>Chamados</p>
                     </div>
                 </div>
+
                 <div onclick="window.open('https://redepharma.com.br:2096/', '_blank')"  class="card-btn">
                     <div class="card-icon">
                         <ion-icon name="mail-outline"></ion-icon>
@@ -91,8 +121,7 @@ session_start();
         <section>
             <div>
                 <div class="colunas" style="padding-top: 30px; padding-bottom: 30px;">
-                    <p style="color: #fff">RedePharma © Desenvolvido por: <a style="text-decoration: none; color: #ff7d12;" href="https://github.com/kcaiosouza">Caio Souza</a> & <a style="text-decoration: none; color: #ff7d12;" href="https://github.com/eliabeguerreiro">Eliabe Paz</a>
-                     </p>
+                <p style="color: #fff">RedePharma ©</p>
                 </div>
             </div>
         </section>
